@@ -1,0 +1,40 @@
+body {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height:100vh;
+  border:black;
+  margin:10px;
+  background-color:rgb(156, 152, 152);
+}
+.tooltip-container {
+  display: flex;
+}
+.tooltip-item {
+  display:inline-block;
+  width:100px;
+  height:100px;
+  line-height:100px;
+  border:3px solid black;
+  text-align:center;
+  font-weight:bold;
+  background-color:rgb(78, 74, 74);
+  color:rgb(230, 221, 221);
+  box-shadow:19px 10px 4px rgb(67, 67, 49);
+  position: relative; 
+}
+.tooltip {
+  visibility:hidden;
+  color: #f2e7e7;
+  text-align:center;
+  padding: 5px;
+  border-radius:6px;
+  bottom:60px;
+  background-color:#292525;
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
+}
+.tooltip-item:hover .tooltip {
+  visibility:visible;
+}
